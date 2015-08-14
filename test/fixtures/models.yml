@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  voupes_file: MyString
+  file_name: MyString
+  auto_desk_url: MyString
+  content_type: 
+
+two:
+  voupes_file: MyString
+  file_name: MyString
+  auto_desk_url: MyString
+  content_type: 

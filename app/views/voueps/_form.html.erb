@@ -1,0 +1,20 @@
+<%= form_for(@vouep) do |f| %>
+  <% if @vouep.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vouep.errors.count, "error") %> prohibited this vouep from being saved:</h2>
+
+      <ul>
+      <% @vouep.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Uplod file",  :class=> "btn btn primary" %>
+  </div>
+<% end %>
